@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫雷游戏</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <audio id="clickSound" src="./sounds/click.mp3" preload="auto"></audio>
+    <audio id="revealSound" src="./sounds/reveal.mp3" preload="auto"></audio>
+    <audio id="explosionSound" src="./sounds/explosion.mp3" preload="auto"></audio>
+    <div id="game-container">
+        <div class="game-header">
+            <h1>Minesweeper</h1>
+            <p>Developed by Feng</p>
+        </div>
+        <div id="minesweeper-wrapper">
+            <div class="decorative-border"></div>
+            <div class="corner-decoration"></div>
+            <div class="corner-decoration"></div>
+            <div class="corner-decoration"></div>
+            <div class="corner-decoration"></div>
+            <div id="minesweeper"></div>
+        </div>
+    </div>
+    <canvas id="particle-canvas"></canvas>
+    <canvas id="cursor-trail"></canvas>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2 id="game-result"></h2>
+            <button id="restart">重新开始</button>
+            <button id="close">关闭游戏</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html> 
